@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(244, 245, 247);
+    width: 800px;
+    height: 1310px;
+    padding: 2px;
+    margin: 0px 5px 5px 5px;
+}
+  #Base-container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 20px 0; 
+    border: 5px solid rgb(237, 237, 6);
+    margin: 0px 0px 0px 5px;
+    width: 100%;
+    background-color: rgb(232, 54, 23);
+    border-radius: 42px 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+/*    z-index: 1;*/
+    }
+
+main{
+    margin-top: 90px;
+}
+    .titulo-inicio{
+        display:block;
+        justify-content:baseline;
+        margin: 0px 94px 0px 0px;
+        
+    }
+
+/*    .menu1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }*/
+
+/*    #check {
+        display: none;
+    }*/
+
+    .checkbtn {
+        font-size: 25px;
+        color: rgb(28, 160, 46);
+        float: right;
+        cursor: pointer;
+        line-height: 80px;
+        margin-right: 40px;
+        z-index: 1;
+    /*   display: none;*/
+    }
+
+  .Seccion1 {
+        padding: 0px 20px 5px 5px;
+        margin: 15px;
+     /*   height: 200px;*/
+    }
+    
+     .Seccion1 .primeraimagen {
+        border-radius: 5% 20%;
+        float:inline-end;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .parrafo-inicio{
+        display: flex;
+    }
+
+    .Parrafos{
+        margin: 2px;
+        padding-left: 10px;
+    }
+
+    .SeccionHobbies{
+        padding: 0px 20px 290px 0px;
+        margin: 15px;
+    }
+
+    .SeccionHistoria{
+        padding: 0px 20px 5px 5px;
+        margin: 15px;
+    }
+
+footer{
+    padding: 20px; 
+    border: 5px solid rgb(237, 237, 6);
+    margin: 5px;
+    border-radius: 42px 10px;
+    height: 110px;
+}
+
+    .Redes{
+        display: flex;
+        float: right;
+        margin-top: -45px;
+    }
+
+   .Derechos{
+        display:inline-flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+nav ul li {
+   display:inline-block;
+}
+
+.button {
+    font-style: italic;
+    color: rgb(232, 54, 23); /* letra */
+    background-color: rgb(237, 237, 6); /*Relleno*/
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    border: 2px solid rgb(232, 54, 23); /*Borde*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.whatsapp{
+    font-style: italic;
+    color: antiquewhite; /* letra */
+    background-color: rgb(37, 211, 102); /*Relleno*/
+    font-weight: bold;
+    padding: 6px;
+    margin: 20px 20px 0px 20px;
+    text-align: center;
+    border: 2px solid rgb(7, 94, 84); /*Borde*/
+    border-radius: 5px;
+    cursor: pointer; 
+    float: left;
+}
+.instagram{
+    font-style: italic;
+    background-color: rgb(214, 41, 118);
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 6px;
+    margin: 20px 20px 0px 20px;
+    text-align: center;
+    border: 2px solid rgb(250, 126, 30); /*Borde*/
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+.facebook{
+    font-style: italic;
+    color: antiquewhite; /* letra */
+    background-color: rgb(59, 89, 152); /*Relleno*/
+    font-weight: bold;
+    padding: 6px;
+    margin: 20px 20px 0px 20px;
+    text-align: center;
+    border: 2px solid rgba(1, 67, 143, 0.705); /*Borde*/
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+#imghobbie {
+    border-radius: 15px;
+}
+.Hobbie{
+    text-justify: newspaper;
+    padding: 15px;
+    background-color: rgb(242, 245, 247);
+    border: solid 15px rgb(232, 54, 23);
+    height: 290px;
+    width: 240px;
+    float: left;
+}
+.main.main.SeccionHobbies{
+    margin: 153px 10px 10px 10px;
+}
+
+@media (max-width:768px) {
+/*   #Base-container {
+    background-color: rgb(232, 54, 23);
+    width: 100%;
+    height: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5ch;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+   }
+   .titulo-inicio{
+    display: inline-flex;
+    justify-content: left;
+   }*/
+   header{
+/*    background-color: aquamarine;*/
+   }
+   .checkbtn{
+    display: block;
+   }
+   #Base-container ul {
+    position: fixed;
+    width: 100%;
+    height: 55vh;
+    background: rgb(237, 237, 6);
+    text-align: center;
+    top: 86px;
+    left: 100%;
+    transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #Base-container nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #Base-container nav ul li a {
+        font-size: 20px;
+    }
+  
+    #check:checked ~ .checkbtn {
+        color: rgb(162, 30, 238);
+    }
+
+   .Seccion1{
+    flex-wrap: wrap;
+    width: 70%;
+   }
+}
